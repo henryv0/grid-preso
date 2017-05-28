@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>CSS Grid</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,71 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 3</section>
+				<section data-background='http://4.bp.blogspot.com/-z0YX4-JkpWw/TrUXbiQYjrI/AAAAAAAATyQ/CbGywLeY6-c/s1600/WallStreet_019Pyxurz.jpg'><blockquote>Grid is good</blockquote></section>
+				<section>CSS Grid: A primer
+				<p class="fragment">for those people who have said they're going to get around to it but haven't yet</p></section>
+				<section>A top-down approach</section>
+				<section>Obligatory caniuse slide</section>
+				<section>
+					<ul style="float: left">
+						<li class="fragment highlight-blue" data-fragment-index="1">grid</li>
+						<li>grid-area</li>
+						<li>grid-auto-columns</li>
+						<li>grid-auto-flow</li>
+						<li>grid-auto-rows</li>
+						<li class="fragment highlight-blue" data-fragment-index="1">grid-column</li>
+						<li>grid-column-end</li>
+						<li>grid-column-gap</li>
+						<li>grid-column-start</li>
+					</ul>
+
+					<ul style="float: right">
+						<li class="fragment highlight-blue" data-fragment-index="1">grid-gap</li>
+						<li class="fragment highlight-blue" data-fragment-index="1">grid-row</li>
+						<li>grid-row-end</li>
+						<li>grid-row-gap</li>
+						<li>grid-row-start</li>
+						<li>grid-template</li>
+						<li>grid-template-areas</li>
+						<li class="fragment highlight-blue" data-fragment-index="1">grid-template-columns</li>
+						<li class="fragment highlight-blue" data-fragment-index="1">grid-template-rows</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>The essential properties</h3>
+					<code>
+						.grid-container {
+							display: grid;
+							grid-template-columns: 100px 100px 100px;
+							grid-template-rows: 100px 150px 200px;
+						}
+					</code>
+				</section>
+
+				<section data-markdown>
+					### The essential properties
+
+					```css
+					.grid-container {
+						display: grid;
+						grid-template-columns: 100px 100px 100px;
+						grid-template-rows: 100px 150px 200px;
+					}
+					```
+				</section>
+				<section data-markdown><textarea>
+					### Title
+
+					```js
+					code block
+					```
+
+					Text
+				</textarea></section>
+				<section>Beyond conventional grid systems</section>
+				<section><h3>Resources</h3>
+				<ul><li>One</li></ul></section>
 			</div>
 		</div>
 
